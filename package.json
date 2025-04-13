@@ -6,6 +6,7 @@
     "node": ">=23"
   },
   "scripts": {
+    "serve": "MODE=production bun --port 8899 ./packages/unpkg-files/src/server.ts",
     "build": "pnpm -r run build",
     "clean": "git clean -fdX .",
     "pretest": "pnpm run build",

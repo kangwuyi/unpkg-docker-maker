@@ -1,4 +1,4 @@
-import { createCacheableResponse } from "./cache-utils.ts";
+import { createCacheableResponse, type ExecutionContext } from "./cache-utils.ts";
 
 export interface PackageFile {
   path: string;

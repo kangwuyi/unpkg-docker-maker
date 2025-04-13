@@ -6,6 +6,7 @@ import { getFile, listFiles, PackageNotFoundError } from "./npm-files.ts";
 import { logRequest } from "./request-logging.ts";
 
 const publicNpmRegistry = "http://192.168.51.38:4873";
+// const publicNpmRegistry = "https://registry.npmjs.org";
 
 export async function handleRequest(request: Request): Promise<Response> {
   try {

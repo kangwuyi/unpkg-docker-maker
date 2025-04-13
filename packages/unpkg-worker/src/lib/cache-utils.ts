@@ -11,3 +11,9 @@ export function createCacheableResponse(response: Response): Response {
     headers,
   });
 }
+// npm pkg -> @cloudflare/workers-types
+export interface ExecutionContext {
+  waitUntil(promise: Promise<any>): void;
+  passThroughOnException(): void;
+  props: any;
+}
