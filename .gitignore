@@ -1,0 +1,6 @@
+dist/
+node_modules/
+
+# `pnpm deploy` output
+dist-app/
+dist-www/
