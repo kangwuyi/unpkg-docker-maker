@@ -29,7 +29,7 @@ http://localhost:8899/list/react@19.1.0/
 ```
 
 ## 镜像上传
-https://hub.docker.com/
+https://hub.docker.com/repository/docker/kangwuyi/unpkg-serve/general
 
 ```bash
 sudo docker build -f ./Dockerfile -t unpkg-serve:test .

@@ -1,5 +1,7 @@
 # 使用官方的 Node.js 镜像作为基础镜像
-FROM node:23 AS unpkg
+# FROM node:23 AS unpkg
+# https://bun.sh/
+FROM oven/bun:latest AS unpkg
 
 # 创建和设置工作目录
 WORKDIR /usr/src/app
@@ -8,7 +10,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # 安装依赖
-RUN npm install pnpm bun -g
+RUN bun install --global pnpm -g
 
 # 挂代理
 # RUN export HTTP=http://192.168.51.34:808
@@ -22,4 +24,4 @@ EXPOSE 8899
 
 ENV MODE='production'
 # 直接运行 unpkg 的启动脚本
-CMD ["npm", "run", "serve"]
+CMD ["pnpm", "run", "serve"]
