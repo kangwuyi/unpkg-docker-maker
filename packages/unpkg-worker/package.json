@@ -15,7 +15,6 @@
     "semver": "^7.6.3"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250320.0",
     "@types/bun": "^1.2.8",
     "@types/semver": "^7.5.8",
     "typescript": "^5.7.2"
